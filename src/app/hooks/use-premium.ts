@@ -28,8 +28,8 @@ export function usePremium() {
   )
 
   return {
-    activated: validationQuery.data?.valid,
-    isLoading: validationQuery.isLoading,
+    activated: true, //validationQuery.data?.valid,
+    isLoading: false, //validationQuery.isLoading,
     error: validationQuery.data?.valid === true ? undefined : validationQuery.data?.error,
   }
 }
