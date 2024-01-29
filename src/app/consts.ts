@@ -94,7 +94,17 @@ export const CHATBOTS: Record<BotId, { name: string; avatar: string }> = {
 }
 
 export const CHATGPT_HOME_URL = 'https://chat.openai.com'
-export const CHATGPT_API_MODELS = ['gpt-3.5-turbo', 'gpt-4', 'gpt-4-turbo'] as const
+export const CHATGPT_API_MODELS = [
+  'gpt-4-0125-preview',
+  'gpt-4-turbo-preview',
+  'gpt-4-1106-preview',
+  'gpt-4-vision-preview',
+  'gpt-4',
+  'gpt-4-32k',
+  'gpt-3.5-turbo-1106',
+  'gpt-3.5-turbo',
+  'gpt-3.5-turbo-16k'
+] as const
 export const ALL_IN_ONE_PAGE_ID = 'all'
 
 export const DEFAULT_CHATGPT_SYSTEM_MESSAGE =
