@@ -61,7 +61,7 @@ const userConfigWithDefaultValue = {
   chatgptApiModel: CHATGPT_API_MODELS[0] as (typeof CHATGPT_API_MODELS)[number],
   chatgptApiTemperature: 1,
   chatgptApiSystemMessage: DEFAULT_CHATGPT_SYSTEM_MESSAGE,
-  chatgptMode: ChatGPTMode.Webapp,
+  chatgptMode: ChatGPTMode.API,
   chatgptWebappModelName: ChatGPTWebModel['GPT-3.5'],
   chatgptPoeModelName: PoeGPTModel['GPT-3.5'],
   startupPage: ALL_IN_ONE_PAGE_ID,
