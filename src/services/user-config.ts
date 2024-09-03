@@ -82,6 +82,8 @@ const userConfigWithDefaultValue = {
   perplexityMode: PerplexityMode.Webapp,
   perplexityApiKey: '',
   geminiApiKey: '',
+  customChatgptApiModel: '', // Changed from optional to a default empty string
+  chatgptSystemMessage: '', // Added to match system message handling
 }
 
 export type UserConfig = typeof userConfigWithDefaultValue

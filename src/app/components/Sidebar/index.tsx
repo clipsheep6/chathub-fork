@@ -43,24 +43,24 @@ function Sidebar() {
   const setShowDiscountModal = useSetAtom(showDiscountModalAtom)
   const setReleaseNotes = useSetAtom(releaseNotesAtom)
 
-  useEffect(() => {
-    Promise.all([getAppOpenTimes(), getPremiumModalOpenTimes(), checkReleaseNotes()]).then(
-      async ([appOpenTimes, premiumModalOpenTimes, releaseNotes]) => {
-        if (!getPremiumActivation()) {
-          const { show, campaign } = await api.checkDiscount({ appOpenTimes, premiumModalOpenTimes })
-          if (show) {
-            setShowDiscountModal(true)
-            return
-          }
-          if (campaign) {
-            setShowDiscountModal(campaign)
-            return
-          }
-        }
-        setReleaseNotes(releaseNotes)
-      },
-    )
-  }, [])
+  //useEffect(() => {
+  //  Promise.all([getAppOpenTimes(), getPremiumModalOpenTimes(), checkReleaseNotes()]).then(
+  //    async ([appOpenTimes, premiumModalOpenTimes, releaseNotes]) => {
+  //      if (!getPremiumActivation()) {
+  //        const { show, campaign } = await api.checkDiscount({ appOpenTimes, premiumModalOpenTimes })
+  //        if (show) {
+          //  setShowDiscountModal(true)
+  //          return
+  //        }
+  //        if (campaign) {
+          // setShowDiscountModal(campaign)
+  //          return
+  //        }
+  //      }
+  //      setReleaseNotes(releaseNotes)
+  //    },
+  //  )
+  // }, [])
 
   return (
     <motion.aside

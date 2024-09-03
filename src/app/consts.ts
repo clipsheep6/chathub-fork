@@ -95,19 +95,33 @@ export const CHATBOTS: Record<BotId, { name: string; avatar: string }> = {
 
 export const CHATGPT_HOME_URL = 'https://chat.openai.com'
 export const CHATGPT_API_MODELS = [
+  'gpt-4o-latest',
+  'gpt-4o-2024-08-06',
+  'gpt-4o',
+  'gpt-4o-2024-05-13',
+  'gpt-4-turbo-2024-04-09',
   'gpt-4-0125-preview',
   'gpt-4-turbo-preview',
+  'gpt-4-turbo',
   'gpt-4-1106-preview',
+  'claude-3-opus',
+  'claude-3-opus-20240229',
+  'claude-3-sonnet',
+  'claude-3-sonnet-20240229',
+  'claude-3-haiku',
+  'claude-3-haiku-20240307',
+  'deepseek-chat',
+  'deepseek-coder',
   'gpt-4-vision-preview',
-  'gpt-4',
-  'gpt-4-32k',
   'gpt-3.5-turbo-1106',
   'gpt-3.5-turbo',
-  'gpt-3.5-turbo-16k'
+  'gpt-3.5-turbo-16k',
+  'gpt-4',
+  'gpt-4-32k'
 ] as const
 export const ALL_IN_ONE_PAGE_ID = 'all'
 
 export const DEFAULT_CHATGPT_SYSTEM_MESSAGE =
-  'You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible. Knowledge cutoff: 2021-09-01. Current date: {current_date}'
+  'You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible. Knowledge cutoff: 2024-06-01. Current date: {current_date}'
 
 export type Layout = 2 | 3 | 4 | 'imageInput' | 'twoVertical' | 'sixGrid' // twoVertical is deprecated

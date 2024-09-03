@@ -28,7 +28,7 @@ Browser.action.onClicked.addListener(() => {
 Browser.runtime.onInstalled.addListener((details) => {
   if (details.reason === 'install') {
     Browser.tabs.create({ url: 'app.html#/setting' })
-    trackInstallSource()
+    //trackInstallSource() //remove tracking
   }
 })
 
@@ -44,7 +44,7 @@ Browser.runtime.onMessage.addListener(async (message, sender) => {
   if (message.target !== 'background') {
     return
   }
-  if (message.type === 'read-twitter-csrf-token') {
-    return readTwitterCsrfToken(message.data)
-  }
+  //if (message.type === 'read-twitter-csrf-token') {
+  //  return readTwitterCsrfToken(message.data)
+  //}
 })
